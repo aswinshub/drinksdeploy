@@ -10,7 +10,7 @@ const Drinks = () => {
   useEffect(() => {
     const fetchDrinks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/drinks");
+        const response = await axios.get("https://drinksdeploy.vercel.app/drinks");
         setDrinks(response.data);
       } catch (err) {
         setError(err.message);
