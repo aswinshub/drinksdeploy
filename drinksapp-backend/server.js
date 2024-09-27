@@ -11,7 +11,7 @@ const drinksRoutes = require('./routes/drinkRoute');
 app.use(cors(
 
 {
-    origin:["https://deploy-drink.vercel.app"],
+    origin:["https://drinksdeploy-frontend.vercel.app/"],
     methods:["POST","GET"],
     credentials: true
 
