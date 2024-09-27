@@ -8,7 +8,17 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const drinksRoutes = require('./routes/drinkRoute');
 
-app.use(cors());
+app.use(cors(
+
+{
+    origin:["https://deploy-drink.vercel.app"],
+    methods:["POST","GET"],
+    credentials: true
+
+}
+
+
+));
 app.use(express.json()); 
 
 
